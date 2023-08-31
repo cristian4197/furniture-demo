@@ -1,0 +1,68 @@
+<section class="container-contact container-dimensions">
+    <h2 class="text-center">Contacto</h2>
+    <form class="form-contact">
+        <fieldset>
+            <legend>Tus Datos</legend>
+            <div class="field">
+                <label for="name">Nombre</label>
+                <input class="input-name" id="name" type="text" placeholder="Tu nombre" required>
+            </div>
+            <div class="field">
+                <label for="case">Asunto</label>
+                <input id="name" type="text" placeholder="Asunto" required>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Tu Email">
+            </div>
+            <div class="field">
+                <label for="phone">Teléfono</label>
+                <input id="phone" type="tel" placeholder="Tu telefono">
+            </div>
+            <div class="field">
+                <label for="message">Mensaje</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+            <div class="field">
+                <label for="country">País</label>
+                <select id="country">
+                    <option value ="" disabled>---Seleccione---</option>
+                    <option value ="PE" selected>Perú</option>
+                    <option value ="CO">Colombia</option>
+                    <option value ="AR">Argentina</option>
+                    <option value ="ES">España</option>
+                    <option value ="CL">Chile</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Extra</legend>
+            <div class="field">
+                <label for="customer">Cliente</label>
+                <input type="radio" id="customer" name="type" value="customer">
+            </div>
+            <div class="field">
+                <label for="provider">Proveedor</label>
+                <input type="radio" id="provider" name="type" value="provider">
+            </div>
+            <div class="field">
+                <label for="category">Categoría de Interes</label>
+                <input list="categories" name="categories">
+                <datalist id="categories">
+                    <option value="Cocina">
+                    <option value="Exterior">
+                    <option value="Recamaras">
+                    <option value="Oficina">
+                    <option value="Televisión">
+                </datalist>
+            </div>
+        </fieldset>
+
+        <button class="btn">Enviar Formulario</button>
+    </form>
+</section>

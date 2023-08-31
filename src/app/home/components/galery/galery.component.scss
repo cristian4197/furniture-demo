@@ -1,0 +1,12 @@
+.galery {
+    // Eliminamos la viñeta por defecto
+    list-style: none;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: 2rem;
+}
+.galery img {
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}

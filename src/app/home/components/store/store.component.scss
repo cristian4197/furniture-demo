@@ -1,0 +1,85 @@
+h2 {
+    // 30 px
+    font-size: 3rem;
+}
+
+.container-store {
+    padding-top: 5rem;
+}
+
+.product {
+    background-color: #037bc0;
+}
+
+.product-detail {
+    text-align: center;
+    color: #FFFFFF;
+    padding: 2rem;
+}
+
+.product-price {
+    // Cambiamos el tamaño y grosor de fuente
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.list-products {
+    display: grid;
+    // Creamos un grid con 6 columnas de igual tamaño
+    grid-template-columns: repeat(6, 1fr);
+    // Separacion entre columnas
+    // column-gap: 2rem;
+    // row-gap: 2rem;
+    // Si los valores de column y row de separacion son iguales podemos resumirlo asi
+    gap: 2rem;
+}
+// Seleccionamos cada hijo para darle estilos personalizados
+// Seleccionamos el primer elemento
+.product:nth-child(1) {
+// Posicionamos el primer hijos desde la linea 1 hasta la 7 para que ocupe todo el espacio
+    // grid-column: 1 / 7; //**Forma resumida
+    grid-column-start: 1;
+    grid-column-end: 7;
+    // Posicionamos la imagen del lado izquierdo y el texto a la derecha
+    display: grid;
+    // La primera columna tomara 3 partes y la ultima a 1 parte
+    grid-template-columns: 3fr 1fr;
+}
+.product:nth-child(1) img {
+    height: 43rem;
+    width: 100%;
+    // Hace que la imagen se posiciona dentro de un contenedor, sin que rebase las medidas del contenedor
+    object-fit: cover;
+}
+.product:nth-child(2) {
+    // Maso menos que tome la mitad del espacio
+    // Los valores aqui son las lineas que aparecen en el navegador
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.product:nth-child(2) img,
+.product:nth-child(3) img {
+    height: 30rem;
+    width: 100%;
+    // Hace que la imagen se posiciona dentro de un contenedor, sin que rebase las medidas del contenedor
+    object-fit: cover;
+}
+.product:nth-child(3) {
+    // Maso menos que tome la mitad del espacio
+    // Los valores aqui son las lineas que aparecen en el navegador
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.product:nth-child(4) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.product:nth-child(5) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.product:nth-child(6) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}

@@ -1,0 +1,11 @@
+.banner {
+    background-image: url('../../../../assets/img/principal.jpg');
+    // La imagen no se repite
+    background-repeat: no-repeat;
+    // Toma el espacio dispobile
+    background-size: cover;
+    // Seleccionamos lo que mostraremos de izquierda a derecha y de arriba a abajo
+    background-position: center center;
+    // 550px
+    height: 55rem;
+}

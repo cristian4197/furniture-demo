@@ -1,0 +1,34 @@
+.container-categories {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 2rem;
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        display: grid;
+        // Crear columnas
+        /*Crear 3 columnas de 3fr*/
+        // 1fr es una fracción, cada fraccion mide igual
+        grid-template-columns: repeat(3, 1fr);
+        // Separación de columnas
+        column-gap: 2rem;
+        a {
+            // Le quitamos el subrayado po defecto
+            text-decoration: none;
+            color: #000000;
+            // Cambiamos a display block para poder darle propiedades como padding
+            display: block;
+            padding: 2rem;
+            font-size: 2rem;
+        }
+
+        a:hover {
+            color: #ffffff;
+            background-color: #037bc0;
+            // Creamos un border en la parte inferior derecha
+            border-bottom-right-radius: 1rem;
+        }
+    }
+}

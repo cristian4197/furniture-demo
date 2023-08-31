@@ -1,0 +1,21 @@
+
+.container-footer {
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+}
+.grid-footer {
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+.nav-item a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+.copyright {
+    padding-bottom: 2rem;
+}

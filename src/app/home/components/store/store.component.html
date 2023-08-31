@@ -1,0 +1,19 @@
+<main class="container-store container-dimensions">
+    <!-- Es main porque es nuestra pagina principal, es decir el tema principal de la pagina -->
+    <h2 class="text-center">Nuestros Productos</h2>
+    <!-- Contenedor principal de Listado de Prodcutos -->
+    <div class="list-products">
+        <!-- Producto especifico -->
+        <div class="product" *ngFor="let product of products">
+            <img [src]="product.src" alt="Imagen Porducto">
+            <!-- Detalle de producto -->
+            <div class="product-detail">   
+                <h3>{{ product.name }}</h3>
+                <p>{{ product.description }}</p>
+                <p class="product-price">${{ product.price }}</p>
+
+                <a routerLink="" class="btn">Agregar al carrito</a>
+            </div>
+        </div>
+    </div>
+</main>

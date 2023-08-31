@@ -1,0 +1,96 @@
+@import '~normalize.css';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    // Con esto hacemos que 1 REM = 10 px
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+// Fuentes globales
+body {
+    font-family: 'Raleway', sans-serif;
+    // Hacemos que la base sea 16px
+    font-size: 1.6rem;
+    // Espacio entre lineas
+    line-height: 2;
+}
+
+// Estilos Globales
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    // Margenes generales 20px de bottom
+    margin: 0 0 2rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+// Imagenes
+img {
+    // Para que se limite al maximo del contenedor
+    max-width: 100%;
+    // Para que tome todo el alto
+    display: block;
+}
+
+.container-dimensions {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+.btn {
+    background-color: #8cbc00;
+    // El elemento toma todo el ancho disponible
+    display: block;
+    color: #ffffff;
+    // Ponemos en mayuscula el texto
+    text-transform: uppercase;
+    // Quitarmos el subrayado por defecto
+    text-decoration: none;
+    // Tomamos el valor de 900 porque lo cargamos desde las fuentes de Google
+    font-weight: 900;
+    padding: 1rem;
+    // Creamos una transicion para el hover
+    // La transicion se ejecuta al hacer hover, y seleccionamos la propiedad que se animara
+    transition: background-color 0.3s ease-out;
+    text-align: center;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #769c02;
+    cursor: pointer;
+}
+
+//***Utilidades****
+.text-center {
+    text-align: center;
+}
+
+.max-width-30 {
+    max-width: 30rem;
+}

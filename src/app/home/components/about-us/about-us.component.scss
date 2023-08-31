@@ -1,0 +1,40 @@
+.container-about {
+    // Degradado Lineal
+    // Degradado hacia de izquierda a derecha, de 0 a 50% sera transparent y de 51% en adelante será 037bc0
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50% , #037bc0 100% ), url('../../../../assets/img/nosotros.jpg');
+    background-position: left center;
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+    // 100% para el linear gradient y 120 rem para la imagen
+    background-size: 100%, 120rem;
+    margin: 4rem 0;
+        
+}
+
+ .container-position {
+
+    // ******Con Flex*****
+    display: flex;
+    justify-content: flex-end;
+
+
+    // ******Con Grid*****
+    // display: grid;
+    // grid-template-columns: repeat(2, 1fr);
+    // Separamos del lado izquierdo 80px
+    // column-gap: 8rem;
+ }
+
+ .detail-content {
+    // ******Con Flex*****
+    // Esto defino el tamaño del contenido
+    flex-basis: 50%;
+    padding-left: 10rem;
+    color: #ffffff;
+
+    // ******Con Grid*****
+    // Alineamos a la derecha
+    // Le indicamos que vayas desde la linea 2 a la 3
+    // grid-column: 2 / 3;
+    // color: #ffffff;
+ }

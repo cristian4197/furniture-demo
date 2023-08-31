@@ -1,0 +1,11 @@
+<section class="container-categories">
+    <!-- Si introduce un nuevo tema es un section -->
+    <h2 class="text-center">Categorías de Producto</h2>
+
+    <div class="container-categories__list">
+        <div *ngFor="let category of categories" class="center">
+            <img [src]="category.src" alt="Imagen Categoría">
+            <a routerLink="">{{category.description}}</a>
+        </div>
+    </div>
+</section>

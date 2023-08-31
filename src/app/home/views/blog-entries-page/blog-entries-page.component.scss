@@ -1,0 +1,18 @@
+.container-blog {
+    display: grid;
+    place-items: center;
+}
+
+.meta-entry {
+    display: flex;
+    justify-content: space-between;
+}
+.meta-entry p {
+    font-weight: bold;
+}
+.meta-entry span {
+    color: #037bc0;
+}
+.container-entry-blog {
+    width: 60rem;
+}

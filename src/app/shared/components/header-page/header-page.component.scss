@@ -1,0 +1,31 @@
+
+.name-site {
+    // 50px
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.title-blue {
+    color: #037bc0;
+}
+
+.container-navigation{
+    // Lo ponemos aqui para que no se limita en el ancho
+    border-top: 1px solid #e1e1e1;
+
+    &__nav {
+        // 20px = 2rem
+        padding: 2rem 0;
+        // Lo ponemos aqui porque afecta al primer nivel de hijos en este caso a los elementos a
+        display: flex;
+        // Distribuimos los elementos de manera uniforme
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+    }
+
+    
+    
+}

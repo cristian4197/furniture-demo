@@ -1,0 +1,43 @@
+
+.form-contact {
+    max-width: 600px;
+    margin: 0 auto;
+
+    fieldset {
+        border: 1px solid black;
+        margin-bottom: 2rem;
+
+        legend {
+          background: #005485;
+          width: 100%;
+          text-align: center;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-weight: 900;
+          padding: 1rem;
+          margin-bottom: 4rem;
+        }
+    }
+}
+.field {
+    display: flex;
+    margin-bottom: 2rem;
+    
+}
+.field label{
+    // Ponemos un tamaño fijo a cada label
+    flex-basis: 10rem;
+}
+// Le estamos indicando que seleccione todos los input menos los de tipo radio
+.field input:not([type="radio"]), textarea,
+select
+ {
+    // Toma todo el espacio restante disponible
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+textarea {
+    resize: none;
+}
